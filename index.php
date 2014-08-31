@@ -14,7 +14,7 @@
 </head>
 <body >
 <?php
-
+asddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
 echo 'Current PHP version: ' . phpversion() . "<br />";
 
 if ( substr(phpversion(),0,1) < 5 ) { echo exit("ERROR: Wrong PHP version"); }
