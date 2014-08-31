@@ -1,0 +1,31 @@
+frmlogin.html
+
+<form action="freesmslogin.php" method="post">
+<input type="text" name="uid" />
+<input type="text" name="pwd" />
+<input type="submit" />
+</form>
+
+
+freesmslogin.php
+
+<body>
+<?php
+$username="root";
+$password="";
+$database="freesms";
+$uid=$_POST['Value1'];
+$pwd=$_POST['Value2'];
+
+mysql_connect("localhost",$username,$password);
+
+mysql_select_db($database) or die( "Unable to select database");
+
+$query = "INSERT INTO login values('','$uid','$pwd')";
+mysql_query($query);
+mysql_close();
+
+?>
+
+</body>
+
